@@ -8,7 +8,7 @@ class Main {
     String ch = s.nextLine();
     String ch2 = ch.toUpperCase();
     for (int i = 0; i < str.length(); i ++) {
-      if (String.valueOf(str.charAt(i)).equals(ch) || String.valueOf(str.charAt(i)).equals(ch2)) {
+      if (String.valueOf(str.charAt(i)).toUpperCase().equals(ch2)) {
         str = str.substring(0, i) + str.substring(i + 1);
       }
     }
